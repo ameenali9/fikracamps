@@ -1,0 +1,90 @@
+* { 
+  padding: 0;
+  margin: 0;
+}
+
+#contianer {
+  width: 80%;
+  margin: auto;
+}
+#contianer > header {
+  margin: 20px;
+}
+#content {
+  display: flex;
+}
+#content #recent_links {
+  flex-grow: 2;
+}
+
+#recent_links article {
+  display: flex;
+}
+
+article {
+  margin: 0px 0px 20px 0px;
+}
+
+article div:nth-child(2) {
+  padding: 0px 0px 0px 10px;
+  position: relative;
+}
+article h3 {
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+}
+
+article p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#recent_links article time {
+  color:#399DF2;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+#most_viewed section {
+  flex-grow: 1;
+  flex-basis:600px;
+  margin: 20px;
+}
+#most_viewed section article{
+  display: flex;
+  position: relative;
+}
+#most_viewed article h2 ,
+#most_viewed article p ,
+#most_viewed article time{
+  position: absolute;
+  margin: 10px;
+  color: #fff;
+}
+#most_viewed article h2{
+  top: 170px;
+}
+#most_viewed article p{
+  top: 200px;
+}
+#most_viewed article time{
+  top: 0px;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+#most_viewed > h3,
+#recent_links > h3{
+  color: rgb(175, 158, 158);
+  font-family: sans-serif;
+}
+
+#most_viewed > h3{
+  margin:0px 0px 10px 20px ; 
+}
+#recent_links  h3{
+  margin:0px 0px 10px 0px ; 
+}
+#most_viewed article img:hover,
+#recent_links article img:hover
+{
+  opacity: 0.8;
+}
